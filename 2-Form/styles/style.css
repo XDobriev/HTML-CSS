@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans;
+    /* пока шрифт не добавлен - коммент, чтоб не забыть */
+}
+
+a {
+    color: #089FE0;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.container {
+    height: 1024px;
+    background: linear-gradient(243deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0.00) 100%), 
+    linear-gradient(243deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0.00) 82.03%), #F39494;
+}
+
+.registration {
+    width: 582px;
+    height: 573px;
+    border-radius: 10px;
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;   
+    font-weight: 700; 
+}
+
+form span {
+    color: #666;   
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    width: 394px;
+}
+
+.company {
+    width: 394px;
+    height: 44px;
+    color: #333;   
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px 150px 9px 11px;
+    margin-top: 47px;
+    border-radius: 5px;
+    border: 1px solid #F5F5F5;
+    background: #FFF;
+}
+
+.info {
+    width: 394px;
+    height: 44px;
+    margin-top: 22px;
+    margin-bottom: 22px;   
+}
+
+.name, .lastName, .email {
+    border: none;
+    color: #999;
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 11px;
+}
+
+.email {
+    width: 394px;
+    height: 44px;
+    margin-bottom: 22px;
+}
+
+button {
+    width: 394px;
+    height: 44px;
+    border-radius: 5px;
+    background: #089FE0;
+    color: #FFF;
+    text-align: center; 
+    font-size: 18px;
+    border: none;
+}
+
+.arrow  {
+
+}
+
+.bottom {
+    margin-top: 22px;
+}
+
+.label {
+    color: #666;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+label a {
+    font-size: 14px;
+    color: #089FE0;
+font-family: Open Sans;
+font-size: 14px;
+
+}
+
+/* не знаю пока как правильно стилизовать стрелку в кнопке. Текст съезжает, если подлключить svg */
