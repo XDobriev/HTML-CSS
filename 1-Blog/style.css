@@ -3,7 +3,155 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* фон, цвет текста, размер шрифтов
+Я применил флекс в нескольких местах, хотя эти темы, пока не объясняли.
+Надеюсь, что не затрудню вам код-ревью
+*/
 body {
+    width: 1440px;
 
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    color: #FFF;
+    font-family: Roboto;
+}
+
+header {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 71px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    background: #4B5563;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 6px 12px;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    /* пока не подключен шрифт */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 11px;
+}
+
+.logo_title {
+    margin-right: 77px;
+}
+
+nav {
+    margin-right: 346px;
+}
+
+nav > ul {
+    display: flex;
+    font-size: 16px;
+    list-style: none;
+}
+
+nav > ul > li:nth-child(1) {
+    padding-right: 52px;
+}
+
+nav > ul > li:nth-child(2) {
+    padding-right: 39px;
+}
+
+.search > input {
+    width: 224px;
+    font-size: 16px;
+    border-radius: 100px;
+    background: rgba(31, 41, 55, 0.60);
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    padding-left: 49px;
+}
+
+main {
+    margin-bottom: 103px;
+}
+
+
+.data {
+    font-size: 14px;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+h1 {
+    width: 525px;
+    font-size: 24px;
+    line-height: 38px; /* 158.333% */
+    margin-bottom: 30px;
+}
+
+.author {
+    display: flex;
+    gap: 16px;
+}
+
+.name {
+    font-size: 16px;
+    line-height: 28px; /* 175% */
+}
+
+.position {
+    opacity: 0.6;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 28px; /* 200% */
+}
+
+.comp {
+    border-radius: 5px;
+    width: 896px;
+    height: 594px;
+    margin-bottom: 69px;
+}
+
+.info {
+    margin-bottom: 28px;
+}
+
+.first_p {
+    width: 708px;
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+    margin-bottom: 30px;
+}
+
+.second_p, .third_p {
+    width: 708px;
+    font-size: 16px;
+    line-height: 30px; /* 187.5% */
+}
+
+
+p > a {
+    text-decoration-line: underline;
+    color: #FFF;
+}
+
+
+footer > div {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px; /* 175% */
+    opacity: 0.6;
 }
