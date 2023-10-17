@@ -12,7 +12,7 @@ body {
 
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
     color: #FFF;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 header {
@@ -22,6 +22,10 @@ header {
 }
 
 .logo {
+
+}
+
+.logo_letter {
     width: 35px;
     height: 35px;
     border-radius: 3px;
@@ -29,7 +33,7 @@ header {
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
     padding: 6px 12px;
     color: #FFF;
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro, sans-serif;
     /* пока не подключен шрифт */
     font-size: 18px;
     font-style: normal;
@@ -128,17 +132,16 @@ h1 {
     margin-bottom: 28px;
 }
 
-.first_p {
-    width: 708px;
-    font-size: 20px;
-    line-height: 32px; /* 160% */
+.paragraph {
+    width: 708px;  
+    font-size: 16px;
+    line-height: 30px;
     margin-bottom: 30px;
 }
 
-.second_p, .third_p {
-    width: 708px;
-    font-size: 16px;
-    line-height: 30px; /* 187.5% */
+p:nth-child(1){
+    font-size: 20px;
+    line-height: 32px;
 }
 
 
@@ -152,6 +155,6 @@ footer > div {
     color: #FFF;
     text-align: center;
     font-size: 16px;
-    line-height: 28px; /* 175% */
+    line-height: 28px;
     opacity: 0.6;
 }

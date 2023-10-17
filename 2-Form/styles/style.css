@@ -94,10 +94,9 @@ button {
     text-align: center; 
     font-size: 18px;
     border: none;
-}
-
-.arrow  {
-
+    background-image: url('../img/Arrow.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 11px right 24px;
 }
 
 .bottom {
