@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 2-Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <form action="/registration">
-        <h1>Регистрация</h1>
+    <div class="container">
+      <form class="registration" action="/registration">
+        <div class="title">
+                    <h1>Регистрация</h1>
         <span>Уже есть аккаунт?</span> <a href="#">Войти</a> <br>
-        <input type="text" placeholder="Моя компания" name="company"> <br>
-        <input type="text" placeholder="Имя" name="name">
-        <input type="text" placeholder="Фамилия" name="lastName"> <br>
-        <input type="email" placeholder="E-mail" name="email" id="email"> <br>
-        <button>Зарегистрироваться</button> <br>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-    </form>
+        </div>
+
+        <main>
+            <input class="company" type="text" placeholder="Моя компания" name="company"> 
+            <div class="info">
+                <input class="name" type="text" placeholder="Имя" name="name">
+                <input class="lastName" type="text" placeholder="Фамилия" name="lastName"> 
+            </div>
+
+            <input class="email" type="email" placeholder="E-mail" name="email" id="email"> <br>
+            <button class="button">Зарегистрироваться</button> <br>
+        </main>
+
+        <div class="bottom">
+                   <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+        <label class="label" for="checkbox">Я прочитал и принимаю <a href="#">Условия использования</a></label> 
+        
+        </div>
+
+    </form>  
+    </div>
+    
 </body>
 </html>
