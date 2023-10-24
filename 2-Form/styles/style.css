@@ -5,8 +5,7 @@
 }
 
 body {
-    font-family: Open Sans;
-    /* пока шрифт не добавлен - коммент, чтоб не забыть */
+    font-family: Open Sans, sans-serif;
 }
 
 a {
@@ -17,19 +16,36 @@ a {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 1024px;
     background: linear-gradient(243deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0.00) 100%), 
     linear-gradient(243deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0.00) 82.03%), #F39494;
 }
 
+
 .registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 47px;
     width: 582px;
     height: 573px;
     border-radius: 10px;
     background: #FFFEFE;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);   
 }
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+
 
 h1 {
     color: #333;
@@ -45,6 +61,12 @@ form span {
 
 main {
     width: 394px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
 }
 
 .company {
@@ -54,7 +76,7 @@ main {
     font-size: 16px;
     font-weight: 600;
     padding: 9px 150px 9px 11px;
-    margin-top: 47px;
+    /* margin-top: 47px; */
     border-radius: 5px;
     border: 1px solid #F5F5F5;
     background: #FFF;
@@ -63,8 +85,9 @@ main {
 .info {
     width: 394px;
     height: 44px;
-    margin-top: 22px;
-    margin-bottom: 22px;   
+    display: flex;
+    gap: 1px;
+
 }
 
 .name, .lastName, .email {
@@ -82,7 +105,6 @@ main {
 .email {
     width: 394px;
     height: 44px;
-    margin-bottom: 22px;
 }
 
 button {
@@ -97,27 +119,23 @@ button {
     background-image: url('../img/Arrow.svg');
     background-repeat: no-repeat;
     background-position: bottom 11px right 24px;
+    font-family: Open Sans, sans-serif;
 }
 
 .bottom {
-    margin-top: 22px;
+    font-family: Open Sans, sans-serif;
 }
 
 .label {
     color: #666;
-font-family: Open Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-size: 14px;
 }
 
 label a {
     font-size: 14px;
     color: #089FE0;
-font-family: Open Sans;
-font-size: 14px;
-
+    text-decoration: none;
 }
 
-/* не знаю пока как правильно стилизовать стрелку в кнопке. Текст съезжает, если подлключить svg */
+/* единственное, я пока не знаю как стилизовать чек-бокс */
+
