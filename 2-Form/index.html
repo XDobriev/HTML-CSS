@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 2-Form</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
       <form class="registration" action="/registration">
-        <div class="title">
-                    <h1>Регистрация</h1>
-        <span>Уже есть аккаунт?</span> <a href="#">Войти</a> <br>
-        </div>
-
-        <main>
-            <input class="company" type="text" placeholder="Моя компания" name="company"> 
-            <div class="info">
-                <input class="name" type="text" placeholder="Имя" name="name">
-                <input class="lastName" type="text" placeholder="Фамилия" name="lastName"> 
+            <div class="title">
+                <h1>Регистрация</h1>
+                <div class="account">
+                   <span>Уже есть аккаунт?</span> <a href="#">Войти</a> 
+                </div>
             </div>
 
-            <input class="email" type="email" placeholder="E-mail" name="email" id="email"> <br>
-            <button class="button">Зарегистрироваться</button> <br>
-        </main>
+            <main>
+                <input class="company" type="text" placeholder="Моя компания" name="company"> 
+                <div class="info">
+                    <input class="name" type="text" placeholder="Имя" name="name">
+                    <input class="lastName" type="text" placeholder="Фамилия" name="lastName"> 
+                </div>
 
-        <div class="bottom">
-                   <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
-        <label class="label" for="checkbox">Я прочитал и принимаю <a href="#">Условия использования</a></label> 
-        
-        </div>
-
-    </form>  
+                <input class="email" type="email" placeholder="E-mail" name="email" id="email">
+                <button class="button">Зарегистрироваться</button>
+                <div class="bottom">
+                    <input class="checkbox-field" type="checkbox" name="checkbox" id="checkbox">
+                    <label class="label" for="checkbox">Я прочитал и принимаю <a href="#">Условия использования</a></label> 
+                </div>
+            </main>
+        </form>  
     </div>
     
 </body>
