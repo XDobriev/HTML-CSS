@@ -8,11 +8,18 @@
 Надеюсь, что не затрудню вам код-ревью
 */
 body {
-   max-width: 1440px;
-
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
     color: #FFF;
     font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 header {
@@ -22,7 +29,7 @@ header {
 }
 
 .logo {
-
+    
 }
 
 .logo_letter {
@@ -102,11 +109,13 @@ h1 {
     font-size: 24px;
     line-height: 38px; /* 158.333% */
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .author {
     display: flex;
     gap: 16px;
+    margin-bottom: 28px;
 }
 
 .name {
@@ -130,6 +139,10 @@ h1 {
 
 .info {
     margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragraph {
