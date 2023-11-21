@@ -1,3 +1,38 @@
+
+
 :root {
     --color-primary: #357EFE;
+	--color-white: #FFFFFF;
+    --color-text-gray: #4E5D7C80;
+    --color-text-gray-active: rgba(255, 255, 255, 0.60);;
+    --color-price: #4E5D7C;
+    --color-shadow-light: rgba(78, 93, 124, 0.16);
+    --color-shadow-medium: rgba(78, 93, 124, 0.32);
+	--color-price-active: #FFC736;
+	--shadow-size: 0 0 32px;
+	--border-8: 8px;
+	--border-10: 10px;
+	--border-47: 47px;
+	--layout-width: calc(1392px - 236px);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
 }

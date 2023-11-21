@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finio - финансовый учет для продавцов на маркетплейсх</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <section class="section">
-            <section class="section_wrapper">
+            <section class="tariff-card_wrapper">
                 <div class="tariff-card">
                     <div class="tariff-card__header">
                         <h2 class="tariff-card__title">1 месяц</h2>
@@ -47,7 +55,7 @@
                             </div>
                             <div class="price">
                                 <div class="price__name">Ваша выгода</div>
-                                <div class="price__num">3 000 ₽</div>
+                                <div class="price__num price__num_active">3 000 ₽</div>
                             </div>
                             <div class="price">
                                 <div class="price__name">Стоимость месяца</div>
@@ -59,29 +67,29 @@
                         <button class="button">Бесплатно 14 дней</button>
                     </div>
                 </div>
-                <div class="tariff-card">
+                <div class="tariff-card tariff-card_active">
                     <div class="tariff-card__header">
                         <h2 class="tariff-card__title">12 месяцев</h2>
-                        <p class="tariff-card__paragraph">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить</p>
+                        <p class="tariff-card__paragraph tariff-card__paragraph_active">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить</p>
                     </div>
                     <div class="tariff-card__body">
                         <div class="tariff-card__prices">
-                            <div class="price">
+                            <div class="price price_active">
                                 <div class="price__name">Общая стоимость</div>
                                 <div class="price__num">11 880 ₽</div>
                             </div>
-                            <div class="price">
+                            <div class="price price_active">
                                 <div class="price__name">Ваша выгода</div>
-                                <div class="price__num">12 000 ₽</div>
+                                <div class="price__num price__num_active">12 000 ₽</div>
                             </div>
-                            <div class="price">
+                            <div class="price price_active">
                                 <div class="price__name">Стоимость месяца</div>
                                 <div class="price__num">990 ₽/мес</div>
                             </div>
                         </div>
                     </div>
                     <div class="tariff-card__footer">
-                        <button class="button">Бесплатно 14 дней</button>
+                        <button class="button button_active">Бесплатно 14 дней</button>
                     </div>
                 </div>
                

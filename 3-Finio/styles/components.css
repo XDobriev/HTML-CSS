@@ -1,7 +1,97 @@
-/* CARD */
+/* TARIFF CARD */
+.tariff-card {
+    height: 507px;
+    box-shadow: var(--shadow-size) var(--color-shadow-light);
+    border-radius: var(--border-8);
+    padding: 48px 40px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+}
 
+.tariff-card_active {
+    background: var(--color-primary);
+    box-shadow: var(--shadow-size) var(--color-shadow-medium);
+    color: var(--color-white);
+}
+
+
+
+.tariff-card__title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%
+}
+
+.tariff-card__paragraph {
+    color: var(--color-text-gray);
+    margin-bottom: 50px;
+}
+
+.tariff-card__paragraph_active {
+    color: var(--color-text-gray-active);
+    margin-bottom: 26px; /* в макете 32px, но больше подходит 26 */
+}
+
+.tariff-card__prices {
+    display: grid;
+    gap: 33px;
+}
+
+.tariff-card__body {
+    margin-bottom: 40px;
+}
+
+/* Price (не уверен, что его стоит выносить в отдельный компонент, но как тогда назвать класс? tariff-card__price__name? */ 
+.price {
+    width: 291px;
+    display: grid;
+    grid-template-columns: [start] 188px auto;
+    font-size: 17px;
+    line-height: 120%;
+    color: var(--color-price);
+    font-weight: 500;
+    align-items: center;
+}
+
+.price_active {
+    color: var(--color-white);
+   
+}
+
+.price__name {
+    font-weight: 500;
+}
+
+.price__num_active {
+    width: 99px;
+    background: var(--color-price-active);
+    padding: 8px 16px; /* второй падинг у меня получился меньше, если взять из макета, то косячно получается, не знаю почему */
+    border-radius: var(--border-8);
+    font-weight: 700;
+
+}
 
 /* Button */
 
+.button {
+    cursor: pointer;
+	display: inline-block;
+    padding: 12px 53px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    border-radius: var(--border-47);
+    border: none;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 140%;
+}
+.button_active {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+
+/* Discount */
 
 /* Paragraph */

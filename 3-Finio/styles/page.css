@@ -1,0 +1,8 @@
+.tariff-card_wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 24px;
+}
+
